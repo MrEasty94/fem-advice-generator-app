@@ -1,0 +1,83 @@
+/* Default Styles */
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--neutral-dark-blue);
+  font-family: var(--primary-font);
+}
+
+/* Custom Variables */
+
+:root {
+  --primary-cyan: hsl(193, 38%, 86%);
+  --primary-green: hsl(150, 100%, 66%);
+  --neutral-gray-blue: hsl(217, 19%, 38%);
+  --neutral-dark-gray-blue: hsl(217, 19%, 24%);
+  --neutral-dark-blue: hsl(218, 23%, 16%);
+
+  --quote-font-size: 28px;
+  --primary-font: 'Manrope', sans-serif;
+  --manrope-font-weight: 800;
+}
+
+/* Advice Styling */
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.advice-container {
+  background-color: var(--neutral-dark-gray-blue);
+  width: 343px;
+  height: 347px;
+  border-radius: 10px;
+  padding: 40px 24px 0 24px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.advice-number {
+  color: var(--primary-green);
+}
+
+.advice-text {
+  font-size: var(--quote-font-size);
+  color: var(--primary-cyan);
+}
+
+.dice-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--primary-green);
+}
+
+/* Attribution Styles */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
