@@ -25,7 +25,7 @@ body {
   --neutral-dark-gray-blue: hsl(217, 19%, 24%);
   --neutral-dark-blue: hsl(218, 23%, 16%);
 
-  --quote-font-size: 28px;
+  --quote-font-size: 20px;
   --primary-font: 'Manrope', sans-serif;
   --manrope-font-weight: 800;
 }
@@ -36,12 +36,13 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-block-end: 2rem;
 }
 
 .advice-container {
   background-color: var(--neutral-dark-gray-blue);
   width: 343px;
-  height: 347px;
+  min-height: 347px;
   border-radius: 10px;
   padding: 40px 24px 0 24px;
   text-align: center;
@@ -49,16 +50,29 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 2rem;
+  position: relative;
 }
 
 .advice-number {
   color: var(--primary-green);
+  font-size: 11px;
+  font-weight: var(--manrope-font-weight);
+  line-height: 15px;
+  position: absolute;
+  top: 48px;
 }
 
 .advice-text {
   font-size: var(--quote-font-size);
   color: var(--primary-cyan);
+  position: absolute;
+  top: 65px;
+  padding: 0 24px;
+}
+
+.pattern-divider {
+  position: absolute;
+  bottom: 65px;
 }
 
 .dice-container {
@@ -69,6 +83,14 @@ main {
   height: 50px;
   border-radius: 50%;
   background-color: var(--primary-green);
+  position: absolute;
+  bottom: -25px;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+.dice-container:hover {
+  box-shadow: 0 0 40px #53ffaa;
 }
 
 /* Attribution Styles */
@@ -80,4 +102,11 @@ main {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 765px) {
+  .advice-container {
+    width: 540px;
+    height: 364px;
+  }
 }
