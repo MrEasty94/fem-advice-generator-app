@@ -44,8 +44,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/MrEasty94/fem-advice-generator-app)
-- Live Site URL: [Add solution URL here](https://michaeleast-fem-advice-generator-app.netlify.app/)
+- Solution URL: [https://github.com/MrEasty94/fem-advice-generator-app]
+- Live Site URL: [https://michaeleast-fem-advice-generator-app.netlify.app/]
 
 ## My process
 
